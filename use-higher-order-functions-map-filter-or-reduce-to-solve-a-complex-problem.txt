@@ -1,0 +1,10 @@
+const squareList = arr => {
+  // Only change code below this line
+  let filterarr = arr.filter(el=> el>0 & (el^0) === el)
+  let maparr = filterarr.map(el=> el*el)
+  return maparr;
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
